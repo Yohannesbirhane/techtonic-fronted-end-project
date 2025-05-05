@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopis - Kid's E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="" alt="Ethiopis Logo Placeholder">
+            <div class="logo-text">
+                <p>Ethiopis</p>
+                <p>ኢትዮጲስ</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="login-page">
+        <div class="background-image-placeholder"></div>
+
+        <div class="login-container">
+            <h2>Login</h2>
+
+            <div class="login-options">
+                <button id="parentLoginBtn">Parent Login</button>
+                <button id="adminLoginBtn">Admin Login</button>
+            </div>
+
+            <div id="parentLoginForm" class="login-form" style="display: none;">
+                <h3>Parent Login</h3>
+                <form id="parentLoginFormSubmit">
+                    <input type="tel" id="parentPhone" placeholder="Phone Number" required>
+                    <input type="password" id="parentPassword" placeholder="Password" required minlength="5">
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+
+            <div id="adminLoginForm" class="login-form" style="display: none;">
+                <h3>Admin Login</h3>
+                <form id="adminLoginFormSubmit">
+                    <input type="text" id="adminUsername" placeholder="Username" required>
+                    <input type="password" id="adminPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

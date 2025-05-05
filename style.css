@@ -1,0 +1,227 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+    border-radius: 5px; /* Optional: for a rounded logo */
+    background-color: #eee; /* Placeholder background */
+}
+
+.logo-text p {
+    margin: 0;
+    font-weight: bold;
+}
+
+nav button, nav a {
+    margin-left: 15px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav button:hover, nav a:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+}
+
+.login-page, .registration-page, .dashboard-page, .admin-dashboard-page, .child-interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 60px); /* Adjust header height */
+}
+
+.background-image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e0f7fa; /* Placeholder color */
+    opacity: 0.3; /* Adjust opacity as needed */
+    z-index: -1;
+}
+
+.login-container, .registration-container, .dashboard-container, .admin-dashboard-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust as needed */
+    max-width: 90%;
+}
+
+.login-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.login-options button {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.login-options button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.login-form, #addContentForm {
+    display: none; /* Initially hide forms */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.login-form h3, #addContentForm h3 {
+    margin-top: 0;
+}
+
+.login-form input[type="tel"],
+.login-form input[type="password"],
+.login-form input[type="text"],
+.registration-container input[type="tel"],
+.registration-container input[type="password"],
+.registration-container input[type="text"],
+.registration-container select,
+#addContentForm input[type="text"],
+#addContentForm select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button[type="submit"],
+.registration-container button[type="submit"],
+#addContentForm button[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover,
+.registration-container button[type="submit"]:hover,
+#addContentForm button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-grid a {
+    display: block;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content-grid a:hover {
+    background-color: #0056b3;
+}
+
+.child-interface header {
+    justify-content: flex-end;
+}
+
+.child-interface main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.beginner-interface .background-image-placeholder {
+    background-color: #ffcdd2; /* Placeholder for beginner */
+}
+
+.intermediate-interface .background-image-placeholder {
+    background-color: #c8e6c9; /* Placeholder for intermediate */
+}
+
+.expert-interface .background-image-placeholder {
+    background-color: #b3e5fc; /* Placeholder for expert */
+}
+
+.sub-menu {
+    display: none; /* Initially hide sub-menus */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.content-grid a:hover + .sub-menu,
+.sub-menu:hover {
+    display: flex;
+}
+
+#contentList {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+#contentList ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contentList li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#contentList li:last-child {
+    border-bottom: none;
+}

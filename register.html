@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopis - Parent Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="" alt="Ethiopis Logo Placeholder">
+            <div class="logo-text">
+                <p>Ethiopis</p>
+                <p>ኢትዮጲስ</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="registration-page">
+        <div class="registration-container">
+            <h2>Parent Registration</h2>
+            <form id="registrationForm">
+                <label for="parentFullName">Full Parent Name:</label>
+                <input type="text" id="parentFullName" required>
+
+                <label for="parentPhone">Phone Number:</label>
+                <input type="tel" id="parentPhone" required>
+
+                <label for="parentPassword">Password (minimum 5 characters):</label>
+                <input type="password" id="parentPassword" required minlength="5">
+
+                <label for="childFullName">Child's Full Name:</label>
+                <input type="text" id="childFullName" required>
+
+                <label for="childAge">Child's Age:</label>
+                <select id="childAge" required>
+                    <option value="">Select Age</option>
+                    <option value="2-4">2-4 years</option>
+                    <option value="4-7">4-7 years</option>
+                    <option value="7-10">7-10 years</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="index.html">Login here</a></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

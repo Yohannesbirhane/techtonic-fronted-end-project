@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopis - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="" alt="Ethiopis Logo Placeholder">
+            <div class="logo-text">
+                <p>Ethiopis</p>
+                <p>ኢትዮጲስ</p>
+            </div>
+        </div>
+        <nav>
+            <button id="adminLogoutBtn">Logout</button>
+        </nav>
+    </header>
+
+    <main class="admin-dashboard-page">
+        <div class="admin-dashboard-container">
+            <h2>Admin Dashboard</h2>
+            <p>Welcome, Admin!</p>
+
+            <h3>Add Content Pages</h3>
+            <form id="addContentForm">
+                <label for="ageGroup">Age Group:</label>
+                <select id="ageGroup" required>
+                    <option value="">Select Age Group</option>
+                    <option value="2-4">2-4 years (Beginner)</option>
+                    <option value="4-7">4-7 years (Intermediate)</option>
+                    <option value="7-10">7-10 years (Expert)</option>
+                </select>
+
+                <label for="pageType">Page Type:</label>
+                <select id="pageType" required>
+                    <option value="">Select Page Type</option>
+                    <option value="lesson">Lesson</option>
+                    <option value="quiz">Quiz</option>
+                    <option value="game">Game</option>
+                    <option value="story">Story</option>
+                    </select>
+
+                <label for="pageTitle">Page Title:</label>
+                <input type="text" id="pageTitle" placeholder="e.g., Alphabet & Phonics" required>
+
+                <button type="submit">Add Page</button>
+            </form>
+
+            <div id="contentList">
+                <h3>Current Content Pages</h3>
+                <p>No content added yet.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
